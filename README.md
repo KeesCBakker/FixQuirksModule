@@ -7,7 +7,7 @@ Quirks mode refers to a technique used by some web browsers for the sake of main
 Sometimes the browser decides to go into quirks mode. The `X-UA-Compatible` header can be used to instruct IE to load a specific version. But what if the user is debugging and asks for IE9? The browser changes it query string, but will be forced back if we just add the `IE=edge`. That's why we created a module that inspects the Trident token and adds the right header.
 
 ## Usage
-Compile the DLL and add the following to the web.config of your project:
+Compile or download the DLL and add the following to the web.config of your project:
 
 ```xml
 <system.webServer>
@@ -18,6 +18,10 @@ Compile the DLL and add the following to the web.config of your project:
 	</modules>
 </system.webServer>
 ```
+
+## Releases
+
+- v1.0.0 download: [KeesTalksTech.FixQuirks.1.0.0.dll](https://github.com/KeesCBakker/FixQuirksModule/raw/master/FixQuirks/FixQuirks/Releases/KeesTalksTech.FixQuirks.1.0.0.dll)
 
 Original: http://keestalkstech.com/2014/12/fixing-quirks-mode-with-a-dll/
 
