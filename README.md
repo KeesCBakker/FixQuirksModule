@@ -14,7 +14,7 @@ Compile the DLL and add the following to the web.config of your project:
   <modules>
 		<remove name="FixQuirksMode" />
 		<add name="FixQuirksMode" 
-		     type="KeesTalksTech.WebUI.ExtendedModules.FixQuirksModule, WebUI.ExtendedModules"/>
+		     type="KeesTalksTech.WebUI.ExtendedModules.FixQuirksModule, KeesTalksTech.FixQuirks"/>
 	</modules>
 </system.webServer>
 ```
